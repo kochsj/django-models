@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div>
+    <h2>{{ bottle.Winery }} - {{ bottle.Grape }}</h2>
+    <p>{{ bottle.Description }}</p>
+    <img src="{% static 'img/freakshow_wine.jpg' %}" alt="">
+</div> 
+{% endblock content %}
+
